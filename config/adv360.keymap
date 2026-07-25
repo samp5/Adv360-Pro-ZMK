@@ -54,9 +54,9 @@
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                                       &mo 3     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &kp PRINTSCREEN                                                                              &kp HOME  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none                      &mo 4      &kp LC(LG(LSHIFT))    &kp END    &mo 4                 &none     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                         &kp LALT              &kp DEL                                    &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                           &kp BSPC  &kp LCTRL  &kp LGUI              &kp LC(A)  &kp ENTER  &kp SPACE                    &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none                      &mo 4      &kp LC(LG(LSHIFT))    &kp END    &kp DEL                 &none     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                         &kp LALT              &kp LC(A)                                      &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                           &kp BSPC  &kp LCTRL  &kp LGUI              &mo 5  &kp ENTER  &kp SPACE                    &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -101,6 +101,17 @@
 &kp ESC    &kp PLUS  &kp MINUS      &kp ASTERISK  &kp SLASH  &none   &none                  &none      &none           &none      &none                 &none  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &none
 &none      &none     &none          &none         &kp TILDE  &none                                     &kp LEFT_ALT    &none                                   &kp TILDE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &none             &none
 &none      &none     &none          &none         &none                           &kp BSPC  &kp LCTRL  &kp LEFT_GUI    &kp LC(A)  &kp ENTER  &kp SPACE                        &bl BL_INC            &bl BL_DEC             &none          &none             &none
+            >;
+        };
+
+        sym2 {
+          display-name = "Symbol2";
+            bindings = <
+&trans     &kp GRAVE         &kp LPAR          &kp RPAR           &kp SEMI           &kp COMMA     &trans                                                                    &trans  &trans      &trans             &trans            &trans        &trans      &trans
+&kp EXCL   &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp QUESTION  &trans                                                                    &trans  &kp PERIOD  &kp DELETE         &kp LS(TAB)       &kp INSERT    &kp ESCAPE  &trans
+&kp POUND  &kp CARET         &kp EQUAL         &kp UNDERSCORE     &kp DOLLAR         &kp ASTERISK  &trans               &kp BACKSLASH  &kp PERIOD    &trans  &trans          &trans  &kp COMMA   &kp BACKSPACE      &kp TAB           &kp SPACE     &kp ENTER   &trans
+&kp TILDE  &kp LESS_THAN     &kp PIPE          &kp MINUS          &kp GREATER_THAN   &kp FSLH                                          &kp ASTRK     &trans                          &kp SEMI    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp SLASH   &trans
+&trans     &kp AMPERSAND     &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PLUS                                 &kp PERCENT  &kp COLON      &kp AT        &trans  &trans  &trans                      &kp LEFT_SHIFT     &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI    &trans
             >;
         };
 
